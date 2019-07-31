@@ -34,6 +34,14 @@ export default {
 </script>
 
 <style scoped>
+a,
+input,
+button {
+  outline: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-focus-ring-color: rgba(0, 0, 0, 0);
+  border: none;
+}
 .button {
   display: block;
   margin: 12px auto;
@@ -44,6 +52,8 @@ export default {
   background-color: #fbb212;
   border-radius: 25px;
   text-align: center;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .button.disabled {

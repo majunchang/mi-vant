@@ -17,7 +17,7 @@ export default {
   name: "HelloWorld",
   data() {
     return {
-      modalShow: false,
+      modalShow: true,
       msg: "组件库测试1",
       modal: {
         msg: "前往想看APP观看原视频,播放更流畅",

@@ -26,8 +26,8 @@ import Button from "../Button/Button";
 
 const buttonStyle = {
   background: "#fff",
-  height: "0.30rem",
-  fontSize: "0.14rem",
+  height: "30px",
+  fontSize: "14px",
   flex: "1",
   margin: 0
 };
@@ -43,13 +43,15 @@ export default {
         ...buttonStyle
       },
       cancelbtnStyle: {
-        color: this.cancelColor
-        // ...buttonStyle
+        color: this.cancelColor,
+        ...buttonStyle
       }
     };
   },
   mounted() {
     let ket = "111";
+    console.log(this.props);
+    console.log(this._props);
   },
   props: {
     show: {
