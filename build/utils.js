@@ -39,11 +39,12 @@ exports.cssLoaders = function (options) {
 
   // generate loader string to be used with extract text plugin
   function generateLoaders(loader, loaderOptions) {
-    const loaders = options.usePostCSS ? [lessLoader, cssLoader, postcssLoader] : [cssLoader]
+    const loaders = options.usePostCSS ? [cssLoader, lessLoader] : [cssLoader]
 
     if (loader) {
       loaders.push({
         loader: loader + '-loader',
+
         options: Object.assign({}, loaderOptions, {
           sourceMap: options.sourceMap
         })
@@ -88,8 +89,6 @@ exports.styleLoaders = function (options) {
       use: loader
     })
   }
-  // console.log(output);
-  // console.log(JSON.stringify(output));
   return output
 }
 

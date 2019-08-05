@@ -4,6 +4,7 @@ const path = require('path');
 const genDefaultConfig = require('@storybook/vue/dist/server/config/defaults/webpack.config.js');
 
 module.exports = (baseConfig, env) => {
+
   const config = genDefaultConfig(baseConfig, env);
 
   // Extend it as you need.
@@ -16,8 +17,19 @@ module.exports = (baseConfig, env) => {
     alias: {
       vue$: 'vue/dist/vue.esm.js',
       '@': resolve('src')
-    }
-  };
+    },
+  }
+  config.module.rules.push({
+    test: /\.(css|less)$/,
+    use: [{
+      loader: 'style-loader' // creates style nodes from JS strings
+    }, {
+      loader: 'css-loader' // translates CSS into CommonJS
+    }, {
+      loader: 'less-loader' // compiles Less to CSS
+    }]
+
+  })
 
   return config;
 };

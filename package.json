@@ -6,9 +6,11 @@
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --host 0.0.0.0 --progress --config build/webpack.dev.conf.js",
-    "start": "npm run dev",
+    "start": "npm run storybook",
     "build": "node build/build.js",
-    "storybook": "start-storybook -p 9001 -c .storybook"
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "clean": "rimraf rollupDist",
+    "rollup": "cross-env NODE_ENV=production rollup -c rollup.config.prod.js"
   },
   "dependencies": {
     "@vue/babel-preset-app": "^3.9.2",
@@ -26,7 +28,6 @@
     "@vue/babel-preset-jsx": "^1.1.0",
     "autoprefixer": "^7.1.2",
     "babel-loader": "^8.0.6",
-    "babel-preset-vue": "^2.0.2",
     "chalk": "^2.0.1",
     "copy-webpack-plugin": "^4.0.1",
     "css-loader": "^0.28.0",
@@ -44,6 +45,15 @@
     "postcss-loader": "^2.0.8",
     "postcss-url": "^7.2.1",
     "rimraf": "^2.6.0",
+    "rollup-plugin-buble": "^0.19.8",
+    "rollup-plugin-commonjs": "^10.0.2",
+    "rollup-plugin-eslint": "^7.0.0",
+    "rollup-plugin-less": "^1.1.2",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-postcss": "^2.0.3",
+    "rollup-plugin-replace": "^2.2.0",
+    "rollup-plugin-uglify": "^6.0.2",
+    "rollup-plugin-vue": "^5.0.1",
     "semver": "^5.3.0",
     "shelljs": "^0.7.6",
     "uglifyjs-webpack-plugin": "^1.1.1",
