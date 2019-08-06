@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import { storiesOf } from '@storybook/vue';
 import miVantButton from '../src/components/Button/Button.vue'
+import { Button } from 'vant'
 
 storiesOf('Button', module)
   .add('with text', () => {
@@ -9,7 +10,7 @@ storiesOf('Button', module)
       template: `<mi-vant-button>storyBook</mi-vant-button>`,
       data() {
         return {
-          name: aa
+          name: 'aa'
         }
       }
     }
@@ -23,7 +24,7 @@ storiesOf('Button', module)
       template: `<mi-vant-button>storyBook</mi-vant-button>`,
       data() {
         return {
-          name: aa
+          name: 'aa'
         }
       }
     }

@@ -6,13 +6,13 @@ import { uglify } from 'rollup-plugin-uglify';
 import vue from 'rollup-plugin-vue'
 // import lessRollup from 'rollup-plugin-less'
 import postcss from 'rollup-plugin-postcss';
-// const less = require('less')
+const less = require('less')
 const path = require('path');
 
 const packages = require('./package.json');
 const ENV = process.env.NODE_ENV;
 const resolveFile = function (filePath) {
-  return path.join(__dirname, '..', filePath)
+  return path.join(__dirname, './', filePath)
 }
 
 
@@ -28,15 +28,26 @@ export default {
     root: 'rollupDist/',
     file: resolveFile('rollupDist/index.js'),
     format: 'umd',
+    name: 'miVant'
   },
   plugins: [
+    resolve({ extensions: ['.js', '.vue'] }),
+    postcss({
+      extensions: ['.less', '.css'],
+      use: [
+        ['less', {
+          javascriptEnabled: true
+        }]
+      ],
+      extract: true,
+      minimize: true,
+    }),
     vue({
       template: {
         isProduction: true
       },
       css: false
     }),
-    resolve(),
     commonjs(),
     buble({
       objectAssign: 'Object.assign'
@@ -44,9 +55,6 @@ export default {
     replace({
       exclude: 'node_modules/**',
       ENV: JSON.stringify(process.env.NODE_ENV),
-    }),
-    postcss({
-      extract: true
     }),
     (ENV === 'production' && uglify()),
   ],

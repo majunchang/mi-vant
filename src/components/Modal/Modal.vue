@@ -6,9 +6,11 @@
           <div class="modal__inner">
             <div class="modal__msg">
               <h1 v-if="title">{{ title }}</h1>
+
               <slot name="msg">
                 <p v-html="msg" />
               </slot>
+              <van-button type="danger">危险按钮</van-button>
             </div>
             <div class="modal-footer">
               <Button :customStyle="cancelbtnStyle" @click="onCancel">{{ cancelText }}</Button>

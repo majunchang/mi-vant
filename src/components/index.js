@@ -1,7 +1,6 @@
 import Button from './Button/index'
 import Modal from './Modal/index'
 
-
 const components = [
   Button,
   Modal
