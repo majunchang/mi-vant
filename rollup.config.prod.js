@@ -12,7 +12,7 @@ const path = require('path');
 const packages = require('./package.json');
 const ENV = process.env.NODE_ENV;
 const resolveFile = function (filePath) {
-  return path.join(__dirname, '..', dir)
+  return path.join(__dirname, '..', filePath)
 }
 
 
