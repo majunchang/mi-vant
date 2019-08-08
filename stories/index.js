@@ -1,9 +1,10 @@
 import { storiesOf } from '@storybook/vue';
-import miVantButton from '../src/components/Button/Button.vue'
 import miVantModal from '../src/components/Modal/Modal.vue'
+import miVantButton from '../src/components/Button/Button.vue'
 
 
-storiesOf('Button', module)
+
+storiesOf('miVantButton', module)
   .add('with text', () => {
     return {
       components: { miVantButton },

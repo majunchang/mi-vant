@@ -4,7 +4,6 @@ import buble from 'rollup-plugin-buble'
 import replace from 'rollup-plugin-replace';
 import { uglify } from 'rollup-plugin-uglify';
 import vue from 'rollup-plugin-vue'
-// import lessRollup from 'rollup-plugin-less'
 import postcss from 'rollup-plugin-postcss';
 const less = require('less')
 const path = require('path');
@@ -25,10 +24,12 @@ const fileNames = {
 export default {
   input: resolveFile('src/components/index.js'),
   output: {
-    root: 'rollupDist/',
-    file: resolveFile('rollupDist/index.js'),
+    // root: 'rollupDist/',
+    // file: resolveFile('rollupDist/index.js'),
+    dir: 'es',
     format: 'umd',
-    name: 'miVant'
+    name: 'miVant',
+    exports: 'named',
   },
   plugins: [
     resolve({ extensions: ['.js', '.vue'] }),
