@@ -16,7 +16,7 @@ module.exports = (baseConfig, env) => {
   config.resolve = {
     extensions: ['.js', '.vue', '.json', '.jsx'],
     alias: {
-      vue$: 'vue/dist/vue.esm.js',
+      'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src')
     },
   }
@@ -34,7 +34,8 @@ module.exports = (baseConfig, env) => {
         options: {
           javascriptEnabled: true
         } // compiles Less to CSS
-      }]
+      }],
+      exclude: /node_modules/
     })
 
 
