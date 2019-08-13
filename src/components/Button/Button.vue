@@ -27,7 +27,6 @@ export default {
   methods: {
     clickHandler() {
       if (this.disabled) return;
-
       this.$emit("click");
     }
   }

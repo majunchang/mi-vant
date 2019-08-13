@@ -8,11 +8,6 @@ storiesOf('Button', module)
     return {
       components: { miVantButton },
       template: `<mi-vant-button>storyBook</mi-vant-button>`,
-      data() {
-        return {
-          name: 'aa'
-        }
-      }
     }
   }
   )
@@ -22,11 +17,6 @@ storiesOf('Button', module)
     return {
       components: { miVantButton },
       template: `<mi-vant-button>storyBook</mi-vant-button>`,
-      data() {
-        return {
-          name: 'aa'
-        }
-      }
     }
   }
   )

@@ -13,7 +13,7 @@
         }
       }
     ],
-    "stage-2"
+    "stage-0"
   ],
   "plugins": [
     [
@@ -23,6 +23,15 @@
         "libraryDirectory": "es",
         "style": true
       }
-    ]
+    ],
+    [
+      "transform-runtime",
+      {
+        "helpers": false,
+        "polyfill": false,
+        "regenerator": true,
+        "moduleName": "babel-runtime"
+      }
+    ],
   ]
 }

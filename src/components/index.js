@@ -1,8 +1,13 @@
-import Button from './Button/index'
+import MiButton from './Button/index'
 import Modal from './Modal/index'
+import Vue from 'vue'
+import { Button } from 'vant';
+
+
+Vue.use(Button)
 
 const components = [
-  Button,
+  MiButton,
   Modal
 ]
 
@@ -22,7 +27,7 @@ if (typeof window !== 'undefined' && window.Vue) {
 }
 
 export {
-  Button,
+  MiButton,
   Modal,
   install
 }
