@@ -1,12 +1,8 @@
 // 自定义webpack配置
 const path = require('path');
 
-// load the default config generator.
-const genDefaultConfig = require('@storybook/vue/dist/server/config/defaults/webpack.config.js');
 
-module.exports = (baseConfig, env) => {
-
-  const config = genDefaultConfig(baseConfig, env);
+module.exports = async ({ config, env }) => {
 
   // Extend it as you need.
   function resolve(dir) {
@@ -20,6 +16,11 @@ module.exports = (baseConfig, env) => {
       '@': resolve('src')
     },
   }
+  config.module.rules.push({
+    test: /\.stories.jsx?$/,
+    loaders: [require.resolve('@storybook/addon-storysource/loader')],
+    enforce: 'pre',
+  });
   config.module.rules.push(
     {
       test: /\.(css|less)$/,

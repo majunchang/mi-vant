@@ -51,11 +51,6 @@ export default {
       }
     };
   },
-  mounted() {
-    let ket = "111";
-    console.log(this.props);
-    console.log(this._props);
-  },
   props: {
     show: {
       type: Boolean,

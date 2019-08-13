@@ -1,37 +1,12 @@
 {
   "presets": [
+    "@babel/preset-env",
+    "@vue/babel-preset-app",
     [
-      "env",
+      "@vue/babel-preset-jsx",
       {
-        "modules": false,
-        "targets": {
-          "browsers": [
-            "> 1%",
-            "last 2 versions",
-            "not ie <= 8"
-          ]
-        }
+        "functional": false
       }
-    ],
-    "stage-0"
-  ],
-  "plugins": [
-    [
-      "import",
-      {
-        "libraryName": "vant",
-        "libraryDirectory": "es",
-        "style": true
-      }
-    ],
-    [
-      "transform-runtime",
-      {
-        "helpers": false,
-        "polyfill": false,
-        "regenerator": true,
-        "moduleName": "babel-runtime"
-      }
-    ],
+    ]
   ]
 }
