@@ -7,7 +7,6 @@
 </template>
 
 <script>
-import "./style/index.less";
 export default {
   name: "mi-vant-button",
   props: {
@@ -32,3 +31,7 @@ export default {
   }
 };
 </script>
+
+<style lang="less">
+@import "./style/index.less";
+</style>

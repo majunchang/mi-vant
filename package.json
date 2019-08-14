@@ -6,8 +6,8 @@
   "private": true,
   "scripts": {
     "storybook": "start-storybook -p 9001 -c .storybook",
-    "dev": "npm run storybook",
-    "start": "npm run dev",
+    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
+    "start": "npm run storybook",
     "build-storybook": "build-storybook -c .storybook",
     "bundle-report": "webpack-bundle-analyzer --port 8123 dist/stats.json",
     "build": "node build/build.js",
@@ -17,10 +17,12 @@
   "dependencies": {
     "@storybook/addon-storysource": "^5.1.11",
     "@vue/babel-preset-app": "^3.9.2",
+    "markdown-it-container": "^2.0.0",
     "rollup": "^1.19.3",
     "vant": "^2.1.1",
     "vue": "^2.5.2",
     "vue-loader": "^15.7.1",
+    "vue-markdown-loader": "^2.4.1",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
@@ -50,6 +52,7 @@
     "html-webpack-plugin": "^2.30.1",
     "less": "^3.9.0",
     "less-loader": "^5.0.0",
+    "markdown-loader": "^5.1.0",
     "node-notifier": "^5.1.2",
     "optimize-css-assets-webpack-plugin": "^3.2.0",
     "ora": "^1.2.0",
@@ -73,7 +76,7 @@
     "uglifyjs-webpack-plugin": "^1.1.1",
     "url-loader": "^2.1.0",
     "vue-style-loader": "^3.0.1",
-    "vue-template-compiler": "^2.6.10",
+    "vue-template-compiler": "^2.5.2",
     "webpack": "^3.6.0",
     "webpack-bundle-analyzer": "^3.4.1",
     "webpack-dev-server": "^2.9.1",

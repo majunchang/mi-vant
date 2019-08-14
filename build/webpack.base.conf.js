@@ -15,7 +15,7 @@ function resolve(dir) {
 module.exports = {
   context: path.resolve(__dirname, '../'),
   entry: {
-    app: './src/components/index.js'
+    app: process.env.NODE_ENV === 'production' ? './src/components/index.js' : './src/main.js'
   },
   output: {
     path: config.build.assetsRoot,
@@ -25,17 +25,18 @@ module.exports = {
     umdNamedDefine: true,
     path: path.join(__dirname, '../lib'),
   },
-  externals: {
+  externals: process.env.NODE_ENV === 'production' ? {
     vue: {
       root: 'Vue',
       commonjs: 'vue',
       commonjs2: 'vue',
       amd: 'vue'
     }
-  },
+  } : {},
   resolve: {
     extensions: ['*', '.js', '.vue', '.json'],
     alias: {
+      'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src')
     }
   },
@@ -47,17 +48,13 @@ module.exports = {
         options: vueLoaderConfig
       },
       {
-        test: /\.less$/,
-        use: [
-          'vue-style-loader',
-          'css-loader',
-          'less-loader'
-        ]
-      },
-      {
         test: /\.js$/,
         loader: 'babel-loader',
-        include: [resolve('src'), resolve('.storybook'), resolve('node_modules/webpack-dev-server/client')]
+        include: [resolve('src'), resolve('.preview'), resolve('.storybook'), resolve('node_modules/webpack-dev-server/client')],
+        exclude: file => (
+          /node_modules/.test(file) &&
+          !/\.vue\.js/.test(file)
+        )
       },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
