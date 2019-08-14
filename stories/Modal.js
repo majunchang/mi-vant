@@ -1,6 +1,7 @@
 import { storiesOf } from '@storybook/vue';
 import miVantModal from '../src/components/Modal/Modal.vue'
 import { withStorySource } from '@storybook/addon-storysource'
+import modalText from '../docs/modal.md'
 
 
 storiesOf('miVantModal', module)
@@ -30,7 +31,7 @@ storiesOf('miVantModal', module)
     }
   },
     {
-      notes: 'A very simple component'
+      notes: modalText
     }
   )
 
