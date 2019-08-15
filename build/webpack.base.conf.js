@@ -66,7 +66,6 @@ module.exports = {
                     validate: function (params) {
                       return params.trim().match(/^demo\s+(.*)$/)
                     },
-
                     render: function (tokens, idx) {
                       if (tokens[idx].nesting === 1) {
                         // 1.获取第一行的内容使用markdown渲染html作为组件的描述
@@ -84,12 +83,13 @@ module.exports = {
                         return `<demo-block>
                         <div class="source" slot="source">${content}</div>
                         ${descriptionHTML}
-                        <div class="highlight" slot="highlight">`
+                        <div class="highlight" slot="highlight"></demo-block>`
                       } else {
                         return '</div></demo-block>\n'
                       }
                     }
-                  }
+                  },
+                  require('markdown-it-multimd-table'),
                 ]
               ]
             }

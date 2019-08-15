@@ -29,7 +29,7 @@
 <script>
 // import "highlight.js/styles/color-brewer.css";
 import hljs from "highlight.js";
-import "highlight.js/styles/atom-one-dark.css";
+import "highlight.js/styles/solarized-light.css";
 import config from "./config";
 
 const highlightCode = () => {
@@ -59,4 +59,14 @@ export default {
 
 <style  lang='less'>
 @import "./less/App.less";
+.hljs {
+  /* display: block; */
+  overflow-x: auto;
+  min-width: 375px;
+  max-width: 600px;
+  padding: 0.5em;
+  padding: 20px 24px 20px;
+  background: #fdf6e3;
+  color: #657b83;
+}
 </style>
