@@ -17,6 +17,7 @@
   "dependencies": {
     "@storybook/addon-storysource": "^5.1.11",
     "@vue/babel-preset-app": "^3.9.2",
+    "element-ui": "^2.11.1",
     "markdown-it-container": "^2.0.0",
     "rollup": "^1.19.3",
     "vant": "^2.1.1",

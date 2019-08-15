@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/preview/helloworld';
+import App from '@/preview/App';
 import testMd from '../../docs/test.md'
 import demo from '../../docs/demo.md'
 
@@ -12,8 +12,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      name: 'demo',
+      component: demo
     },
     {
       path: '/test',

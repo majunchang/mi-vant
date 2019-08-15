@@ -2,16 +2,19 @@
 
 ## 基础用法
 
-:::demo 通过`plain`属性可以设置为朴素的按钮
-
+:::demo 默认样式
 
 
 ```html
 <mi-vant-button>确认</mi-vant-button>
 ```
 
-:::demo
 
+#Button
+
+## 设置为disabled
+
+:::demo 设置为disabled
 ```html
-<mi-vant-button>1认</mi-vant-button>
+<mi-vant-button disabled>12121</mi-vant-button>
 ```

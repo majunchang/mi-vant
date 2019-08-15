@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import App from './App'
-import router from './router'
-import demoBlock from './preview/demo-block.vue';
-import miVant from './components'
+import router from '../router'
+import demoBlock from './demo-block.vue';
+import miVant from '../components'
 
 
 Vue.component('demo-block', demoBlock);

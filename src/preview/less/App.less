@@ -1,0 +1,88 @@
+// 变量和共用方法的声明
+
+@defaultColor: #455a64;
+@hoverColor:#1989fa;
+@height: 60px;
+
+.navTitle{
+  font-size:16px;
+  font-weight:600;
+  cursor: default;
+}
+.navItem {
+  color: @defaultColor;
+  font: 14px/24px PingFang SC;
+  padding: 10px 10px 10px 30px;
+  text-align: left;
+  cursor: pointer;
+}
+
+
+#app {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+.header {
+  width: 100%;
+  height: @height;
+  background: #001938;
+}
+.container {
+  width: 100%;
+  height: 500px;
+  display: flex;
+}
+.header-icon {
+  float: left;
+  margin-left: 13px;
+  margin-top: 13px;
+  width: 26px;
+  height: 26px;
+  background: url("../images/mi-logo.png");
+  background-size: 26px;
+}
+.header-title {
+  font-size: 22px;
+  float: left;
+  color: #ffffff;
+  margin-top: 13px;
+  margin-left: 10px;
+}
+.aside {
+  flex: 0 0 221px;
+  margin-top: @height;
+}
+
+.doc-nav-title,
+.doc-comp-title{
+  .navItem();
+  .navTitle();
+}
+
+.doc-nav-item{
+  .navItem()
+}
+
+.doc-comp-item{
+  .navItem()
+}
+.doc-comp-banner{
+  .navItem();
+  font-size: 12px;
+  line-height: 40px;
+  padding-left: 30px;
+  color: rgba(69,90,100,.6);
+}
+.doc-nav-item:hover,
+.doc-comp-item:hover {
+  color: @hoverColor;
+}
+
+.content {
+  flex: 1;
+  margin-top: @height;
+  // background: #ebedf0;
+}
