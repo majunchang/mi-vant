@@ -1,11 +1,13 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-// import demoBlock from './preview/demo-block.vue';
+import demoBlock from './preview/demo-block.vue';
+import miVant from './components'
 
 
-// Vue.component('demo-block', demoBlock);
+Vue.component('demo-block', demoBlock);
 Vue.config.productionTip = false
+Vue.use(miVant)
 
 
 
