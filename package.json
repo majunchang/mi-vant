@@ -12,7 +12,8 @@
     "bundle-report": "webpack-bundle-analyzer --port 8123 dist/stats.json",
     "build": "node build/build.js",
     "clean": "rimraf rollupDist",
-    "rollup": "cross-env NODE_ENV=production rollup --config=rollup.config.prod.js"
+    "rollup": "cross-env NODE_ENV=production rollup --config=rollup.config.prod.js",
+    "docsify": "docsify serve ./docsify"
   },
   "dependencies": {
     "@storybook/addon-storysource": "^5.1.11",
