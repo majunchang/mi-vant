@@ -83,8 +83,7 @@ module.exports = {
                         return '</div></demo-block>\n'
                       }
                     }
-                  },
-                  require('markdown-it-multimd-table'),
+                  }
                 ]
               ]
             }

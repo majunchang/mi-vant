@@ -279,7 +279,7 @@ sudo npm install --global cross-env
 
 
 
-### 项目启动和运行
+#### 项目启动和运行
 
 ```js
 // 克隆项目到本地
@@ -307,15 +307,29 @@ git clone  https://github.com/majunchang/mi-vant.git
 
 
 
-### 项目截图
+#### 项目截图
+
+> 项目结构和目录截图
+
+![image.png](https://upload-images.jianshu.io/upload_images/5703029-91513ada0240f5b2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+> storybook的预览模式
+
+![image.png](https://upload-images.jianshu.io/upload_images/5703029-b406248e60625e76.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![image.png](https://upload-images.jianshu.io/upload_images/5703029-6551364ceb8667eb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
+![image.png](https://upload-images.jianshu.io/upload_images/5703029-76c59e43eaf1cf99.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![image.png](https://upload-images.jianshu.io/upload_images/5703029-4c4f2898e4e114c0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
+> 文档模式
 
-#####
 
-
+![image.png](https://upload-images.jianshu.io/upload_images/5703029-093ac07c420a7e64.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](https://upload-images.jianshu.io/upload_images/5703029-5de49b509e9cc793.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
 
