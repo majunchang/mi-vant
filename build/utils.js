@@ -14,8 +14,6 @@ exports.assetsPath = function (_path) {
 
 exports.cssLoaders = function (options) {
   options = options || {}
-
-
   const cssLoader = {
     loader: 'css-loader',
     options: {
@@ -44,7 +42,6 @@ exports.cssLoaders = function (options) {
     if (loader) {
       loaders.push({
         loader: loader + '-loader',
-
         options: Object.assign({}, loaderOptions, {
           sourceMap: options.sourceMap
         })

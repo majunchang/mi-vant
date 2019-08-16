@@ -13,7 +13,7 @@ export default new Router({
     {
       path: '/',
       name: 'demo',
-      component: demo
+      component: r => require.ensure([], () => r(require('../../docs/demo.md')))
     },
     {
       path: '/test',
