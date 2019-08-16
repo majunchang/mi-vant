@@ -17,7 +17,6 @@
   "dependencies": {
     "@storybook/addon-storysource": "^5.1.11",
     "@vue/babel-preset-app": "^3.9.2",
-    "element-ui": "^2.11.1",
     "markdown-it-container": "^2.0.0",
     "rollup": "^1.19.3",
     "vant": "^2.1.1",
@@ -53,7 +52,6 @@
     "html-webpack-plugin": "^2.30.1",
     "less": "^3.9.0",
     "less-loader": "^5.0.0",
-    "markdown-it-multimd-table": "^3.2.3",
     "markdown-loader": "^5.1.0",
     "node-notifier": "^5.1.2",
     "optimize-css-assets-webpack-plugin": "^3.2.0",

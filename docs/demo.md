@@ -19,24 +19,29 @@ Vue.use(Button);
 
 ```html
 <mi-vant-button>确认</mi-vant-button>
-<mi-vant-button disabled>确认</mi-vant-button>
+
 <mi-vant-button>取消</mi-vant-button>
 
 ```
 :::
 
 
-:::demo 禁止
+:::demo 禁用
+
 ```html
-<mi-vant-button>取消11</mi-vant-button>
+<mi-vant-button disabled>确认</mi-vant-button>
 ```
+
 :::
 
 
 - 1
 - 2
 - 3
-事件：
+
+
+
+> props属性
 
 | 名称  | 回调参数 | 备注  |
 | :---- | :------- | :---- |

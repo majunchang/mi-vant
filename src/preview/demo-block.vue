@@ -21,6 +21,7 @@
       </span>
     </div>
     <div class="demo-block-code" v-show="showCode">
+      <p class="copy" @click="copy">复制</p>
       <slot name="highlight"></slot>
     </div>
   </div>
@@ -31,9 +32,30 @@ export default {
     return {
       showCode: false
     };
+  },
+  methods: {
+    copy(e) {
+      const hightext = e.target.nextElementSibling;
+      const input = document.createElement("input");
+      document.body.appendChild(input);
+      let value = hightext.innerText;
+      input.value = value;
+      input.select();
+      if (document.execCommand("copy")) {
+        document.execCommand("copy");
+        console.log("复制成功");
+      }
+      document.body.removeChild(input);
+    }
   }
 };
 </script>
 <style lang='less'>
 @import "./less/base.less";
+.copy {
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 0;
+}
 </style>

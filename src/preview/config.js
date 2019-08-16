@@ -27,12 +27,16 @@ const asideContentArr = [
     name: '基础组件',
     Arr: [
       {
+        name: 'demo',
+        path: '/'
+      },
+      {
         name: 'Button按钮',
         path: '/button'
       },
       {
         name: 'Madal弹框',
-        path: '/button'
+        path: '/Modal'
       }
     ]
   },

@@ -15,12 +15,17 @@
           <div class="doc-comp-title">组件</div>
           <div class="doc-comp" v-for="(item,index) in asideContentArr" :key="index">
             <div class="doc-comp-banner">{{item.name}}</div>
-            <div class="doc-comp-item" v-for="(it,ind) in item.Arr" :key="ind">{{it.name}}</div>
+            <div
+              class="doc-comp-item"
+              v-for="(it,ind) in item.Arr"
+              :key="ind"
+              @click="goRouter(it.path)"
+            >{{it.name}}</div>
           </div>
         </div>
       </div>
       <div class="content">
-        <router-view />
+        <router-view class="markdown"></router-view>
       </div>
     </div>
   </div>
@@ -53,6 +58,11 @@ export default {
   },
   updated() {
     highlightCode();
+  },
+  methods: {
+    goRouter(path) {
+      this.$router.push(`${path}`);
+    }
   }
 };
 </script>

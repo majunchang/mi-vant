@@ -78,7 +78,7 @@ module.exports = {
                         return `<demo-block>
                         <div class="source" slot="source">${content}</div>
                         ${descriptionHTML}
-                        <div class="highlight" slot="highlight"></demo-block>`
+                        <div class="highlight" slot="highlight">`
                       } else {
                         return '</div></demo-block>\n'
                       }
