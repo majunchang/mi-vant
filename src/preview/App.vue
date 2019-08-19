@@ -9,7 +9,12 @@
       <div class="aside">
         <div class="title">
           <div class="doc-nav-title">开发指南</div>
-          <div class="doc-nav-item" v-for="(item,index) in asideTitleArr" :key="index">{{item.name}}</div>
+          <div
+            class="doc-nav-item"
+            v-for="(item,index) in asideTitleArr"
+            :key="index"
+            @click="goRouter(item.path)"
+          >{{item.name}}</div>
         </div>
         <div class="comp">
           <div class="doc-comp-title">组件</div>
@@ -73,10 +78,14 @@ export default {
   /* display: block; */
   overflow-x: auto;
   min-width: 375px;
-  max-width: 600px;
+  max-width: 818px;
   padding: 0.5em;
   padding: 20px 24px 20px;
   background: #fdf6e3;
   color: #657b83;
+  border-radius: 6px;
+  background-color: #f2f4f5;
+  -webkit-box-shadow: 0 8px 12px #ebedf0;
+  box-shadow: 0 8px 12px #ebedf0;
 }
 </style>

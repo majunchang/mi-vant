@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import App from '@/preview/App';
+import quickStart from '../../docs/quickStart.md'
+import customTheme from '../../docs/customTheme.md'
 import testMd from '../../docs/test.md'
 import demo from '../../docs/demo.md'
 import Modal from '../../docs/modal.md'
@@ -12,6 +14,11 @@ Vue.use(Router)
 
 export default new Router({
   routes: [
+    {
+      path: '/quickStart',
+      name: 'quickStart',
+      component: quickStart
+    },
     {
       path: '/',
       name: 'demo',
@@ -28,9 +35,9 @@ export default new Router({
       component: Button
     },
     {
-      path: '/demo',
-      name: 'demo',
-      component: demo
+      path: '/customTheme',
+      name: 'customTheme',
+      component: customTheme
     }
   ]
 })

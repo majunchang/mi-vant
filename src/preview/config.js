@@ -9,12 +9,8 @@ const asideTitleArr = [
     path: '/quickStart'
   },
   {
-    name: '内置样式',
-    path: '/innerStyle'
-  },
-  {
     name: '定制主题',
-    path: '/'
+    path: '/customTheme'
   },
   {
     name: '服务端渲染',
