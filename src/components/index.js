@@ -1,10 +1,6 @@
 import MiButton from './Button/index'
 import Modal from './Modal/index'
-import Vue from 'vue'
-import { Button } from 'vant';
 
-
-Vue.use(Button)
 
 const components = [
   MiButton,

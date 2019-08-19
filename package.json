@@ -60,6 +60,7 @@
     "portfinder": "^1.0.13",
     "postcss-import": "^11.0.0",
     "postcss-loader": "^2.0.8",
+    "postcss-px2rem": "^0.3.0",
     "postcss-url": "^7.2.1",
     "rimraf": "^2.6.0",
     "rollup-plugin-buble": "^0.19.8",
