@@ -1,6 +1,7 @@
 import { configure, addDecorator } from '@storybook/vue';
 import { withNotes } from '@storybook/addon-notes'
 import { addReadme } from 'storybook-readme/vue';
+import { setOptions } from '@storybook/addon-options'
 import { Button } from 'vant'
 import Vue from 'vue'
 
@@ -12,6 +13,21 @@ const req = require.context('../stories', true, /\.js$/)
 function loadStories() {
   req.keys().forEach((filename) => req(filename))
 }
+
+setOptions({
+  name: 'feed-ui',
+  url: '#',
+  goFullScreen: false,
+  showStoriesPanel: true,
+  showAddonPanel: true,
+  showSearchBox: true,
+  addonPanelInRight: true,
+  sortStoriesByKind: false,
+  hierarchySeparator: null,
+  hierarchyRootSeparator: null,
+  sidebarAnimations: true,
+  selectedAddonPanel: undefined,
+})
 
 addDecorator(addReadme);
 addDecorator(withNotes)
