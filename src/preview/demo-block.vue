@@ -51,7 +51,7 @@ export default {
 };
 </script>
 <style lang='less'>
-@import "./less/base.less";
+@import "./less/demo-block.less";
 .copy {
   cursor: pointer;
   position: absolute;

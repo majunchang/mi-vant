@@ -1,11 +1,22 @@
 import { storiesOf } from '@storybook/vue';
+import { withKnobs } from '@storybook/addon-knobs';
 import miVantModal from '../src/components/Modal/Modal.vue'
 import { withStorySource } from '@storybook/addon-storysource'
 import modalText from '../docs/modal.md'
 
-
+let str = `<mi-vant-modal :show="modalShow" :msg="modal.msg"
+:close="false"
+:confirm-text="modal.confirmText"
+:cancel-text="modal.cancelText"
+/>`
 storiesOf('miVantModal', module)
-  .addDecorator(withStorySource('<mi-vant-modal></mi-vant-modal>'))
+  .addDecorator(withKnobs)
+  .addDecorator(withStorySource(str))
+  .addParameters({
+    readme: {
+      sidebar: modalText,
+    },
+  })
   .add('with text', () => {
     return {
       components: { miVantModal },

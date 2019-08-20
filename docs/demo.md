@@ -35,6 +35,44 @@ Vue.use(Button);
 :::
 
 
+:::demo 禁用
+
+```html
+<template>
+  <div class="demo-block-container">
+    <mi-vant-modal
+      show
+      msg="哈哈哈哈"
+      close
+      confirm-text="确认"
+      cancel-text="取消"
+    />
+  </div>
+
+</template>
+<script>
+
+   export default {
+       data() {
+        return {
+          modalShow: true,
+          msg: "组件库测试1",
+          modal: {
+            msg: "前往想看APP观看原视频,播放更流畅",
+            confirmText: "确定",
+            cancelText: "取消"
+          }
+        };
+      },
+    }
+
+</script>
+```
+
+:::
+
+
+
 - 1
 - 2
 - 3

@@ -8,7 +8,7 @@
 
 ## 示例
 
-![image.png](https://upload-images.jianshu.io/upload_images/5703029-cf52ae80e4752466.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](http://t1.market.xiaomi.com/download/Browser/086bc94eab072458d14ed742ac78f7251da1e1dcb/1.png)
 
 ```html
   <template>

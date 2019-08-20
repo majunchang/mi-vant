@@ -1,0 +1,17 @@
+{
+  "name": "mi-vant",
+  "version": "0.1.0",
+  "description": "轻量，可靠的移动端vue组件库,我们热爱分享和开源。让设计者和开发者专注于更好的用户体验",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/majunchang/mi-vant"
+  },
+  "keywords": [
+    "mi-vant",
+    "miVant",
+    "vant"
+  ],
+  "author": "majunchang",
+  "license": "ISC"
+}
