@@ -220,7 +220,7 @@ module.exports = function (api) {
 
 - 基础设置都配置好了，在引入插件的时候 发现插件不能用.......... 不知名的报错   让人很蛋疼………..,会提示一个语法错误。而实际上我们配置的babel中已经解析了 但是 它还是会报错。。。。 猜测与插件版本有关
 
-  ![image.png](https://upload-images.jianshu.io/upload_images/5703029-75b5cf4521ce4f48.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+  ![image.png](http://t1.market.xiaomi.com/download/Browser/Browser/0d98f147d74074d091526e67bd312a2d68c0f92e3/1.png)
 
 - 最终选择了  目前的稳定版，更改了相关的配置 并引入相关的插件
 
@@ -306,7 +306,7 @@ git clone  https://github.com/majunchang/mi-vant.git
 ```
 
 
-
+<!--
 #### 项目截图
 
 > 项目结构和目录截图
@@ -329,7 +329,7 @@ git clone  https://github.com/majunchang/mi-vant.git
 
 
 ![image.png](https://upload-images.jianshu.io/upload_images/5703029-093ac07c420a7e64.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-![image.png](https://upload-images.jianshu.io/upload_images/5703029-5de49b509e9cc793.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](https://upload-images.jianshu.io/upload_images/5703029-5de49b509e9cc793.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) -->
 
 
 
