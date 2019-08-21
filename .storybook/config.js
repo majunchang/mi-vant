@@ -15,7 +15,7 @@ function loadStories() {
 }
 
 setOptions({
-  name: 'feed-ui',
+  name: 'mi-Vant',
   url: '#',
   goFullScreen: false,
   showStoriesPanel: true,
