@@ -1,4 +1,4 @@
-import { configure, addDecorator } from '@storybook/vue';
+import { configure, addDecorator, addParameters } from '@storybook/vue';
 import { withNotes } from '@storybook/addon-notes'
 import { addReadme } from 'storybook-readme/vue';
 import { setOptions } from '@storybook/addon-options'
@@ -29,6 +29,9 @@ setOptions({
   selectedAddonPanel: undefined,
 })
 
+addParameters({
+  viewport: { defaultViewport: 'galaxys5' },
+})
 addDecorator(addReadme);
 addDecorator(withNotes)
 configure(loadStories, module);
