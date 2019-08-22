@@ -1,9 +1,6 @@
 'use strict'
 require('../build/check-versions')()
 
-process.env.NODE_ENV = 'production'
-process.env.npm_config_report = false
-
 const ora = require('ora')
 const rm = require('rimraf')
 const path = require('path')
