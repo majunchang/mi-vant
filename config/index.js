@@ -38,7 +38,6 @@ module.exports = {
 
   build: {
     // Template for index.html
-    // index: path.resolve(__dirname, '../dist/index.html'),
 
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
@@ -65,5 +64,18 @@ module.exports = {
     // `npm run build --report`
     // Set to `true` or `false` to always turn it on or off
     bundleAnalyzerReport: false
-  }
+  },
+  buildDoc: {
+    // Template for index.html
+    index: path.resolve(__dirname, '../dist-doc/index.html'),
+    // Paths
+    assetsRoot: path.resolve(__dirname, '../dist-doc'),
+    assetsSubDirectory: 'static',
+    assetsPublicPath: '/',
+    productionSourceMap: true,
+    // https://webpack.js.org/configuration/devtool/#production
+    devtool: '#source-map',
+    productionGzip: false,
+    productionGzipExtensions: ['js', 'css'],
+  },
 }
