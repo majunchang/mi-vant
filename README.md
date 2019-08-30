@@ -4,15 +4,12 @@
 
 #### 目前完成的
 
-- 自定义主体
+- 定制主题
 - 按需加载
-- 预览模式
-- 文档功能
-
-#### 未完成
-
-- ssr 支持服务端渲染
-- rem适配   跟目前想看的rem  要适配
+- 可按需引入其他ui组件库
+- storybook预览模式
+- markdown预览模式
+- rem适配
 
 
 
@@ -279,7 +276,7 @@ sudo npm install --global cross-env
 
 
 
-### 项目启动和运行
+#### 项目启动和运行
 
 ```js
 // 克隆项目到本地
@@ -304,17 +301,6 @@ git clone  https://github.com/majunchang/mi-vant.git
  "clean": "rimraf rollupDist",
  "rollup": "cross-env NODE_ENV=production rollup --config=rollup.config.prod.js"
 ```
-
-
-
-### 项目截图
-
-
-
-
-
-#####
-
 
 
 
