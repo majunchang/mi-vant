@@ -42,7 +42,7 @@ Vue.use(Button);
   <div class="demo-block-container">
     <mi-vant-modal
       show
-      msg="哈哈哈哈"
+      msg="百川东到海，何时复西归"
       close
       confirm-text="确认"
       cancel-text="取消"

@@ -24,7 +24,7 @@ const asideContentArr = [
     Arr: [
       {
         name: 'demo',
-        path: '/'
+        path: '/demo'
       },
       {
         name: 'Button按钮',

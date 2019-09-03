@@ -20,9 +20,15 @@ export default new Router({
       component: quickStart
     },
     {
-      path: '/',
+      path: '/demo',
       name: 'demo',
       component: r => require.ensure([], () => r(require('../../docs/demo.md')))
+    },
+    {
+      path: '/',
+      name: 'quickStart',
+      component: quickStart,
+      // component: r => require.ensure([], () => r(require('../../docs/demo.md')))
     },
     {
       path: '/Modal',

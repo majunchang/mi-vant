@@ -6,8 +6,8 @@
 
 - 支持按需引入
 - 预览模式
-  - storybook预览模式
-  - 纯markdown预览模式
+  - [storybook预览模式](http://10.46.22.138/storybook-static/?path=/story/button--button%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8)
+  - [纯markdown预览模式](https://majunchang.github.io/mi.vant/#/quickStart)
 - rem适配
 - 支持主题定制
 - 较为完善的使用文档和示例

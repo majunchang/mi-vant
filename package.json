@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "storybook": "start-storybook -p 9001 -c .storybook",
-    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
+    "dev": "webpack-dev-server --inline --progress --config build-doc/webpack.dev.conf.js",
     "start": "npm run storybook",
     "build-storybook": "build-storybook -c .storybook",
     "bundle-report": "webpack-bundle-analyzer --port 8123 dist/stats.json",
