@@ -6,8 +6,8 @@
 
 - 支持按需引入
 - 预览模式
-  - [storybook预览模式](http://10.46.22.138/storybook-static/?path=/story/button--button%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8)
-  - [纯markdown预览模式](https://majunchang.github.io/mi.vant/#/quickStart)
+  - storybook预览模式
+  - 纯markdown预览模式
 - rem适配
 - 支持主题定制
 - 较为完善的使用文档和示例
@@ -45,7 +45,7 @@
 
 5. 优化代码与使用jsV8补丁做效能调校，编译速度更快。
 
-6. webpack中babel-loader的版本要高于@babel/core的版本，否则编译会报错
+6. webpack中babel-loader的版本不低于@babel/core的版本，否则编译会报错
 
 
 
@@ -53,7 +53,7 @@
 
 .babelrc中的配置和相关的依赖
 
-```js
+```Js
 {
   "presets": [
     ["env", {
@@ -89,7 +89,7 @@
 
 mivant中最终版的babel.config.js中的配置和相关依赖
 
-```js
+```Js
 module.exports = function (api) {
   api.cache(true);
 
@@ -143,9 +143,8 @@ module.exports = function (api) {
 
 [解读vue.use源码](https://segmentfault.com/a/1190000016256277)
 
-```js
+```Js
    Object.keys(components).forEach((key)=>{
-     Vue.use()
      Vue.component(components[key].name,components[key])
    })
 ```
@@ -205,7 +204,7 @@ export default {
  Vue.use(Modal)
 ```
 
-
+> [babel-pluhin-import](https://github.com/ant-design/babel-plugin-import)
 
 ##### 按需加载的第二种方式
 
@@ -299,7 +298,7 @@ import Vue from 'vue'
 
 2. 自定义的webpack配置，解决扩展名问题和less编译问题
 
-```js
+   ```js
    // 自定义webpack配置
    const path = require('path');
 
@@ -407,7 +406,7 @@ import Vue from 'vue'
 
   - config.js中 配置允许环境，安装全局插件。类似于vue项目的main.js
 
-```js
+    ```js
     import { configure, addDecorator, addParameters } from '@storybook/vue';
     import { withNotes } from '@storybook/addon-notes'
     import { addReadme } from 'storybook-readme/vue';
@@ -461,13 +460,15 @@ import Vue from 'vue'
 
   - 基础设置都配置好了，在引入插件的时候 发现插件不能用.......... 不知名的报错   让人很蛋疼………..,会提示一个语法错误。而实际上我们配置的babel中已经解析了 但是 它还是会报错。。。。 猜测与插件版本有关
 
-  ```js
+    ```js
     ReferenceError:  regeneratorRuntime is not defined
-  ```
+    ```
 
 
 
--  按需引入vant库的时候 报了一个css-loader的错误
+    ![image.png](https://upload-images.jianshu.io/upload_images/5703029-75b5cf4521ce4f48.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+- 按需引入vant库的时候 报了一个css-loader的错误
 
   解决办法：增加exclude
 
@@ -763,7 +764,7 @@ export default {
 
 #### rem的适配+定制主题
 
->  rem的适配功能
+> rem的适配功能
 
 - 通过postcss-px2rem将px单位自动转化为rem单位
 
@@ -832,7 +833,6 @@ miVant 使用了 [Less](http://lesscss.org/) 对样式进行预处理，并内�
 **定制方法**
 
 1. 使用 less 提供的 [modifyVars](http://lesscss.org/usage/#using-less-in-the-browser-modify-variables) 即可对变量进行修改，下面是参考的 webpack 配置。
-
 2. 这里以vue2.x版本的脚手架举例  /build/utils目录下
 
 ```js
