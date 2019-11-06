@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <div class="header">
-      <div class="header-icon"></div>
       <div class="header-title">Mi-Vant</div>
       <div class="header-git"></div>
     </div>

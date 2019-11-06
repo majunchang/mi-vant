@@ -1,9 +1,4 @@
 const asideTitleArr = [
-
-  {
-    name: '介绍',
-    path: '/'
-  },
   {
     name: '快速上手',
     path: '/quickStart'
@@ -12,10 +7,6 @@ const asideTitleArr = [
     name: '定制主题',
     path: '/customTheme'
   },
-  {
-    name: '服务端渲染',
-    path: '/'
-  }
 ]
 
 const asideContentArr = [
@@ -30,23 +21,15 @@ const asideContentArr = [
         name: 'Button按钮',
         path: '/button'
       },
-      {
-        name: 'Madal弹框',
-        path: '/Modal'
-      }
     ]
   },
   {
     name: '表单组件',
     Arr: [
       {
-        name: 'Field输入框',
-        path: '/button'
+        name: 'Input',
+        path: '/Input'
       },
-      {
-        name: 'Uploader文件上传',
-        path: '/button'
-      }
     ]
   }
 ]
