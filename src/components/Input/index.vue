@@ -147,7 +147,8 @@ InputVue.miVantTextarea = Textarea;
 export default InputVue;
 </script>
 
-<style>
+<style lang="less">
+@import "../less/index.less";
 .mi-vant-input {
   width: 100%;
   margin-top: 7px;

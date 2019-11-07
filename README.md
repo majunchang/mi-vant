@@ -2,6 +2,11 @@
 
 > 打造一个内部的组件库，在我们进行代码的重构，以及开发新的功能的时候，抽离公共的组件，减少代码的复用，注重业务与组件的分离，简化耦合度，便于开发与维护。
 
+### 预览地址
+
+https://majunchang.github.io/mi.vant/#/quickStart
+
+https://majunchang.github.io/mi.vant.storybook/?path=/story/mivantbutton--with-text
 #### 特性
 
 - 支持按需引入

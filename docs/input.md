@@ -9,8 +9,8 @@
 #### textarea和input的引入方式
 
 ```js
-import {MiInput} from 'miVant';
-const MiInput = MiInput.fuiTextarea;
+import {MiVantInput} from 'miVant';
+const MiVantTextarea = MiVantInput.MiVantTextarea;
 ```
 
 
@@ -185,13 +185,13 @@ const MiInput = MiInput.fuiTextarea;
 
 
 
-
+###  报错信息默认为红色，在这里被md的样式覆盖了 正常使用不影响
 ### 注意事项：
 
 -  input 内置了组件非空的校验，设置required为true即可
 - 内置了输入长度的校验
 - 支持自定义校验等
--  通过fuiTextarea = fuiInput.fuiTextarea 来引入textarea组件
+-  引入textarea组件的方式
 - 上面的示例中 需要注意check方法
   - 校验非空，当用户不触发组件的输入和失焦事件，直接submit的时候 需要增加这样的一条判断
   - 输入组件存在错误的时候，进行提交。  不同于react的函数式组件，在这里 通过getFieldsError，将子组件传递给父组件 进而影响到data中的值，通过对数据进行筛选 可以判断当前是否存在错误

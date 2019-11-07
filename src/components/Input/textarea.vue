@@ -143,7 +143,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="less">
 .mi-vant-textarea {
   width: 100%;
   margin-top: 7px;

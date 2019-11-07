@@ -15,7 +15,8 @@
     "clean": "rimraf rollupDist",
     "rollup": "cross-env NODE_ENV=production rollup --config=rollup.config.prod.js",
     "docsify": "docsify serve ./docsify",
-    "deploay": "cd dist && npm publish"
+    "deploy": "sh deploy.sh",
+    "deploy-storybook": "sh deploy-storybook.sh"
   },
   "dependencies": {
     "@storybook/addon-storysource": "^5.1.11",
