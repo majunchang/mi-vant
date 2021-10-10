@@ -209,7 +209,7 @@ export default {
  Vue.use(Modal)
 ```
 
-> [babel-pluhin-import](https://github.com/ant-design/babel-plugin-import)
+> [babel-plugin-import](https://github.com/ant-design/babel-plugin-import)
 
 ##### 按需加载的第二种方式
 
