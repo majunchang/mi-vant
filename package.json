@@ -76,7 +76,7 @@
     "rollup-plugin-uglify": "^6.0.2",
     "rollup-plugin-vue": "^5.0.1",
     "semver": "^5.3.0",
-    "shelljs": "^0.7.6",
+    "shelljs": "^0.8.5",
     "storybook-readme": "^5.0.8",
     "uglifyjs-webpack-plugin": "^1.1.1",
     "url-loader": "^2.1.0",
